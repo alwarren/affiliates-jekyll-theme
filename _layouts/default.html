@@ -55,7 +55,7 @@
                       {% assign categories_list = site.categories %}
                       {% if categories_list.first[0] == null %}
                       {% for category in categories_list %}
-                      <a class="dropdown-item" href="{{site.baseurl}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                      <a class="dropdown-item" href="{{site.baseurl}}{% if beta %}/site-preview{% endif %}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
                       {% endfor %}
                       {% else %}
                       {% for category in categories_list %}
