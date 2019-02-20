@@ -7,7 +7,7 @@ meta_description: "Android development, Kotlin, Deep Thoughts, and Musings"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 paginate: 12
-baseurl: '/site-preview/'
+baseurl: '/site-preview'
 email: 'ntxdroid@gmail.com'
 google_analytics: ''
 disqus: 'ntxdroid'
@@ -57,7 +57,7 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    category: '/category/:name/'
+    category: '/site-preview/category/:name/'
 
 # Other
 markdown: kramdown
