@@ -1,22 +1,40 @@
 ---
 layout: page
-title: About
-comments: true
+title: What's it all about Alfie.
+comments: false
 ---
+Sit back and enjoy a few random thoughts and musings from an old guy with a computer. The journey is about to begin. It's going to be a fun ride my friend.
 
-This website is built with Jekyll and "Affiliates" (a Jekyll Template designed & developed by WowThemes.net). It is meant for demonstration purposes, so you can have an idea of how this theme looks in action so no real content can be found. Affiliates template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github. This page in example shows a page layout.
+> *"Where are we going? Life, the timeless, mysterious gift, is still evolving. What wonders, or terrors, does evolution hold in store for us in the next ten thousand years? In a million? In six million? Perhaps the answer lies in this old house in this old and misty valley..." - The Outer Limits, 1963*
+{: .text-justify}
 
-**License & Download**
+<div class="section-title">
+    <h2><span>Who’s the guy behind the droid?</span></h2>
+</div>
 
-"Affiliates" for Jekyll is designed and developed by WowThemes.net and it is *free* for personal use.
+Just some old guy with a computer that says he's paid his dues in I.T. Claims he did a lot of COBOL back in the day. Whatever that means. Now days, he does this stuff as a hobby to keep his mind sharp.
 
-<a href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip" target="_blank">Download - Affiliates Jekyll Theme</a>
+He's a pretty nice guy that really enjoys not only learning but sharing what he learns with others.
+<br/>{: .text-justify}
 
-![jekyll template mediumish]({{site.baseurl}}/assets/images/theme1.jpg)
+<div class="section-title">
+    <h2><span>What's that squiggly thing?</span></h2>
+</div>
 
-![jekyll template mediumish]({{site.baseurl}}/assets/images/theme2.jpg)
+It's called Aleph. It's a cursive form of the first letter of the Hebrew alphabet. Here's an interesting bit of trivia about Aleph. If you reverse it, the bits and pieces form a new meaning - wonder. As if by magic. In fact, that's where the word *abracadabra* comes from. It's Hebrew for, *"I create as I speak."* It has nothing to do with the site other than it looks cool.
+{: .text-justify}
 
-![jekyll template mediumish]({{site.baseurl}}/assets/images/theme3.jpg)
+<div class="section-title">
+    <h2><span>Things to remember.</span></h2>
+</div>
+>Kindness is one of the greatest gifts you can bestow upon another.
+<br/>If someone is in need, lend them a helping hand. Do not wait for a thank you.
+<br/>True kindness lies within the act of giving without the expectation of something in return.
+{: .text-justify}
 
-![jekyll template mediumish]({{site.baseurl}}/assets/images/theme4.jpg)
+<hr/>
+<!-- <br/> -->
 
+<p align="center" class="pt-4 pb-0">
+  <img src="/assets/images/smartphone-map.jpg">
+</p>

@@ -1,6 +1,6 @@
-# "Affiliates" - Jekyll Template by WowThemes.net
+### Site theme is a modified version of<br> &nbsp;&nbsp;&nbsp;&nbsp;"Affiliates" - A Jekyll Template by WowThemes.net
 
-[Live Demo](https://wowthemesnet.github.io/affiliates-jekyll-theme/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip) &nbsp; | &nbsp; [Buy me a coffee](https://www.paypal.me/wowthemes/10)
+[Live Demo](https://wowthemesnet.github.io/affiliates-jekyll-theme/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip) &nbsp; | &nbsp; [Buy the artist a coffee](https://www.paypal.me/wowthemes/10)
 
 
 ![affiliates](assets/images/theme1.jpg)
@@ -34,7 +34,7 @@
     - Post
     - Page
     - Archive
-    
+
 ### How to Use
 
 If you aren't familiar with Jekyll yet, you should know that it is a static site generator. It will transform your plain text into static websites and blogs. No more databases, slow loading websites, risk of being hacked...just your content. And not only that, with Jekyll you get free hosting with GitHub Pages! This page itself is free hosted on Github with the help of Jekyll and Affiliates template that you're currently previewing. If you are a beginner we recommend you start with [Jekyll's Docs](https://jekyllrb.com/docs/installation/). Now if you know how to use Jekyll, let's move on to using Affiliates template in Jekyll:
@@ -46,14 +46,14 @@ If you aren't familiar with Jekyll yet, you should know that it is a static site
 - `bundle`
 - Edit `_config.yml`. If your site is in root: `baseurl: '/'`. Also, change your Google Analytics code, Disqus username, Authors, Mailchimp, ShareThis code etc.
 - `jekyll serve --watch`
-- Start blogging by adding your .md files in `_posts`. 
+- Start blogging by adding your .md files in `_posts`.
 
 - YAML front matter
     - post featured - `featured:true`
     - post featured image - `image: assets/images/mypic.jpg`
     - page comments - `comments:true`
     - meta description (optional) - `description: "this is my meta description"`
-    
+
 YAML Post Example:
 ```
 ---

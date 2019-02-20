@@ -1,19 +1,28 @@
 # Site
-name: "Affiliates Theme for Jekyll"
-title: "Affiliates Theme for Jekyll"
-description: "Jekyll Theme for Blogging"
-meta_description: "Jekyll theme for blogging."
+name: "The Droid Zone"
+title: "The Droid Zone"
+beta: false
+description: "Random thoughts, musings, and things Droid"
+meta_description: "Android development, Kotlin, Deep Thoughts, and Musings"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 paginate: 12
 baseurl: '/site-preview/'
-email: 'wowthemesnet@gmail.com'
-google_analytics: 'UA-46278016-1'
-disqus: 'demowebsite'
-sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
+email: 'ntxdroid@gmail.com'
+google_analytics: ''
+disqus: 'ntxdroid'
+sharethis: ''
 
 # Authors
 authors:
+  al:
+    name: Al
+    display_name: Al
+    gravatar: 9aece350f7fe51308e19b3b693a77a8a
+    email: ntxdroid@gmail.com
+    web: https://ntxdroid.com/
+    twitter:
+    description: "Retired programmer keeping a sharp mind by doing it for fun instead of a paycheck. Never stop learning."
   sal:
     name: Sal
     display_name: Sal
@@ -32,13 +41,16 @@ authors:
     description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-        
+
+feed:
+  path: atom.xml
+
 # Archives
 jekyll-archives:
   enabled:
@@ -46,7 +58,7 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
 # Other
 markdown: kramdown
 highlighter: rouge
