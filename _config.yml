@@ -1,7 +1,7 @@
 # Site
 name: "The Droid Zone"
 title: "The Droid Zone"
-beta: false
+beta: true
 description: "Random thoughts, musings, and things Droid"
 meta_description: "Android development, Kotlin, Deep Thoughts, and Musings"
 logo: 'assets/images/logo.png'
