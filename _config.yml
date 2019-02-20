@@ -12,6 +12,7 @@ email: 'ntxdroid@gmail.com'
 google_analytics: ''
 disqus: 'ntxdroid'
 sharethis: ''
+include: ["_pages"]
 
 # Authors
 authors:
@@ -57,7 +58,7 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    category: '/site-preview/category/:name/'
+    category: '/category/:name/'
 
 # Other
 markdown: kramdown
