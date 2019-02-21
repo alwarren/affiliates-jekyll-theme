@@ -12,7 +12,7 @@ Modeled on Fernando Cejas's example of MVVM clean architecture for Kotlin, it us
 
 Starting with retrofit, I have a builder object I use for injecting the service into the repository.
 
-``` kotlin
+```Kotlin
 object Api {
     private const val endpoint = "https://api.spacexdata.com/v3/"
     private val converter = GsonConverterFactory.create()
@@ -29,7 +29,7 @@ I'm not doing anything special with Retroit so I decided to just use the Gson co
 
 Then I have an interface for the request. The call to requestFromApi gives me some options. The first parameter is just the call, the second allows me to transform the data, and the third is a default value to return if the response body is null. Error handling is simplistic. I don't care about error responses. Either we get data for display or we don't so I just return a generic server error. If I wanted to do logging I'd do it a bit differently.
 
-``` kotlin
+```Kotlin
 interface ApiRequest {
     fun <T, R> requestFromApi(
         call: Call<T>,
@@ -50,7 +50,7 @@ interface ApiRequest {
 
 The repository is pretty straight forward. I'm not doing local storage because it's just an example so we just use the api.
 
-``` kotlin
+```Kotlin
 interface MissionRepository : ApiRequest {
     fun missions(): Either<Failure, List<Mission>>
 
@@ -74,7 +74,7 @@ interface MissionRepository : ApiRequest {
 
 This is the UseCase where we use a coroutines suspending function.
 
-``` kotlin
+```Kotlin
 class GetMissions(private val repository: MissionRepository)
     : UseCase<List<Mission>, UseCase.None>() {
 
@@ -84,7 +84,7 @@ class GetMissions(private val repository: MissionRepository)
 
 And here is the abstract UseCase where the coroutines magic happens,.
 
-``` kotlin
+```Kotlin
 abstract class UseCase<out Type, in Params> where Type : Any{
     private val mainJob = Job()
     private val uiScope = CoroutineScope(Dispatchers.Main + mainJob)
@@ -111,7 +111,7 @@ abstract class UseCase<out Type, in Params> where Type : Any{
 
 The GetMissions use case gets launched in the ViewModel. It's a pretty typical use of LiveData in a ViewModel. It stores LiveData that we can observe for changes and handles the request to fetch the data. It's really more of a presenter than the traditional view model. Except it handles rotation changes effortlessly.
 
-``` kotlin
+```Kotlin
 class MissionsViewModel(private val getMissions: GetMissions) : BaseViewModel() {
     val _missions = MutableLiveData<List<MissionsView>>()
     val missions: LiveData<List<MissionsView>>
@@ -133,7 +133,7 @@ class MissionsViewModel(private val getMissions: GetMissions) : BaseViewModel() 
 
 Finally, here's how we use it in a fragment:
 
-``` kotlin
+```Kotlin
 override fun onActivityCreated(savedInstanceState: Bundle?) {
 	super.onActivityCreated(savedInstanceState)
 

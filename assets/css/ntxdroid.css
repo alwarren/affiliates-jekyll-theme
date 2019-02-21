@@ -49,3 +49,11 @@ i.fa, i.fab {
 span.beta {
   font-size: 1.0rem;
 }
+
+.article-post a {
+  color: #17a2b8;
+}
+
+.article-post a:hover {
+  color: #0000CD;
+}

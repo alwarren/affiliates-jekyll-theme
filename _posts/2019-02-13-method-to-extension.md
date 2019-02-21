@@ -4,8 +4,8 @@ title: "Method to Extension"
 author: al
 categories: [ Android Studio ]
 image: assets/images/java-code-1.png
-featured: true
-hidden: true
+featured: false
+hidden: false
 source:
 ---
 Suppose you have some Kotlin function that takes an argument and you want to convert it to an extension. There's a keyboard shortcut for that.
