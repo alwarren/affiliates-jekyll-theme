@@ -31,7 +31,7 @@ The repository extends `ApiRequest` so I can do something like this: `requestFro
 
 ### Clean Architecture
 
-So what makes using [IntelliJ](https://www.jetbrains.com/idea/) important in my development lifecycle? [Clean Architecture](https://fernandocejas.com/2018/05/07/architecting-android-reloaded/). [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). It forces me to do both of those because, not only am I not tempted to, I actually can't use Android things.
+So what makes using [IntelliJ](https://www.jetbrains.com/idea/) important in my development lifecycle? [Clean Architecture](https://fernandocejas.com/2018/05/07/architecting-android-reloaded/) and [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). It forces me to do both of those because, not only am I not tempted to, I actually can't use Android things.
 
 The code in the aforementioned article was all initially developed in a plain [Kotlin](https://kotlinlang.org/) project in IntelliJ. And here's why. If it runs, compiles, and tests in Intellij, I can be assured that it will do the same in [Android Studio](https://developer.android.com/studio/) without any Android or project related dependencies.
 
