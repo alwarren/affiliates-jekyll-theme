@@ -36,5 +36,6 @@ It's called Aleph. It's a cursive form of the first letter of the Hebrew alphabe
 <!-- <br/> -->
 
 <p align="center" class="pt-4 pb-0">
-  <img src="/assets/images/smartphone-map.jpg">
+  <img src="{{site.url}}/assets/images/smartphone-map.jpg">
+
 </p>
