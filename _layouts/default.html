@@ -17,8 +17,6 @@
 
 </head>
 
-
-
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{ layout }}">
 
@@ -26,84 +24,82 @@
 <!-- Begin Menu Navigation
 ================================================== -->
 <header class="navbar navbar-expand-md navbar-light bg-white fixed-top mediumnavigation border-bottom">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="container">
+  </button>
+  <div class="container">
 
-        <!-- Begin Logo -->
-        <div class="d-none d-md-block d-lg-block d-xl-block">
-          <a class="navbar-brand" href="{{ site.baseurl }}/">
-          <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-          </a>
-        </div>
-        <!-- End Logo -->
-
-        <!-- Begin Menu -->
-        <div class="collapse navbar-collapse" id="navbarsWow">
-
-            <!-- Begin Menu -->
-            <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                      {% assign categories_list = site.categories %}
-                      {% if categories_list.first[0] == null %}
-                      {% for category in categories_list %}
-                      <a class="dropdown-item" href="{{site.baseurl}}{% if beta %}/site-preview{% endif %}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
-                      {% endfor %}
-                      {% else %}
-                      {% for category in categories_list %}
-                      <a class="dropdown-item" href="{{site.baseurl}}/categories#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                      {% endfor %}
-                      {% endif %}
-                      {% assign categories_list = nil %}
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
-
-                <li class="nav-item align-middle">
-                  <a class="nav-link" href="#">
-                  <!-- <a class="nav-link" href="{{ site.baseurl }}/contact"> -->
-                    <i class="d-none d-md-block d-lg-block d-xl-block fa fa-envelope"></i>
-                    <span class="d-sm d-md-none d-lg-none d-xl-none">
-                      Contact Us
-                    </span>
-                  </a>
-               </li>
-
-                <li class="nav-item">
-               <a target="_blank" class="nav-link" href="https://github.com">
-                 <i class="d-none d-md-block d-lg-block d-xl-block fab fa-github"></i>
-                 <span class="d-sm d-md-none d-lg-none d-xl-none">
-                   GitHub
-                 </span>
-               </a>
-               </li>
-
-            </ul>
-            <!-- End Menu -->
-
-        </div>
+    <!-- Begin Logo -->
+    <div class="d-none d-md-block d-lg-block d-xl-block">
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+      </a>
     </div>
+      <!-- End Logo -->
+
+    <!-- Begin Menu -->
+    <div class="collapse navbar-collapse" id="navbarsWow">
+
+      <!-- Begin Menu -->
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              {% assign categories_list = site.categories %}
+              {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+              <a class="dropdown-item" href="{{site.baseurl}}{% if beta %}/site-preview{% endif %}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+              {% endfor %}
+              {% else %}
+              {% for category in categories_list %}
+              <a class="dropdown-item" href="{{site.baseurl}}/categories#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                {% endfor %}
+              {% endif %}
+              {% assign categories_list = nil %}
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+        </li>
+
+        <li class="nav-item align-middle">
+          <a class="nav-link" href="#">
+          <!-- <a class="nav-link" href="{{ site.baseurl }}/contact"> -->
+            <i class="d-none d-md-block d-lg-block d-xl-block fa fa-envelope"></i>
+            <span class="d-sm d-md-none d-lg-none d-xl-none">
+              Contact Us
+            </span>
+          </a>
+       </li>
+
+        <li class="nav-item">
+          <a target="_blank" class="nav-link" href="https://github.com">
+            <i class="d-none d-md-block d-lg-block d-xl-block fab fa-github"></i>
+             <span class="d-sm d-md-none d-lg-none d-xl-none">
+               GitHub
+             </span>
+         </a>
+       </li>
+
+      </ul>
+      <!-- End Menu -->
+
+    </div>
+  </div>
 </header>
-
-
 
 <!-- End Menu Navigation
 ================================================== -->
 
 <div class="site-content">
 
-    <div class="container">
+  <div class="container">
 
     <!-- Site Title
     ================================================== -->
@@ -113,45 +109,46 @@
         {% if site.beta %}<span class="beta"> Beta</span>{% endif %}
       </h1>
 
-        <p class="lead">
-             {{ site.description }}
-        </p>
+      <p class="lead">
+           {{ site.description }}
+      </p>
     </div>
 
 
-    <!-- Content
-    ================================================== -->
+      <!-- Content
+      ================================================== -->
     <div class="main-content">
         {{ content }}
     </div>
 
-    </div><!-- /.container -->
+  </div><!-- /.container -->
 
-    <!-- Begin Footer
-    ================================================== -->
-    <footer class="footer">
+  <!-- Begin Footer
+  ================================================== -->
+  <footer class="footer">
 
-        <div class="container">
+      <div class="container">
 
-            <div class="copyright">
-                <p class="float-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }}.
-                </p>
-                <p class="float-right">
-                <!-- Licensed under MIT by WowThemes.net -->
-                Hosted on <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
-                </p>
-                <div class="clearfix"></div>
-            </div>
+          <div class="copyright">
+              <p class="float-left">
+              Copyright © {{ site.time | date: "%Y" }} {{ site.name }}.
+              </p>
+              <p class="float-right">
+              <!-- Licensed under MIT by WowThemes.net -->
+              Hosted on <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+              </p>
+              <div class="clearfix"></div>
+          </div>
 
-        </div>
+      </div>
 
-    </footer>
-    <!-- End Footer
-    ================================================== -->
+  </footer>
+  <!-- End Footer
+  ================================================== -->
 
-
-</div> <!-- /.site-content>
+</div>
+<!-- End Site Content
+================================================== -->
 
 <!-- JavaScript
 ================================================== -->
@@ -169,5 +166,4 @@
 <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
 
 </body>
-
 </html>

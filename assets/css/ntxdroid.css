@@ -35,6 +35,13 @@ ul.tags li a:hover {
 }
 
 .mediumnavigation {
+	background: #fff;
+        transition: top 0.5s ease-in-out;
+        padding: 1.5rem 1rem;
+        /* box-shadow: 0px 10px 40px 0px rgba( 0, 0, 0, 0.05 ); */
+}
+
+.mediumnavigation {
     padding: 0.75rem 0.75rem;
     font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
 }
@@ -56,4 +63,20 @@ span.beta {
 
 .article-post a:hover {
   color: #0000CD;
+}
+
+.bottompagination span.navigation a {
+    background: #ffe57f;
+    color: #757575;
+}
+
+pre {
+  border: #d3d3d3 1px solid;
+  background: #f8f8f8;
+}
+
+ul.tags li a:hover {
+  color: #494949;
+  background: #d3d3d3;
+  text-decoration: none;
 }
