@@ -2,6 +2,7 @@
 layout: page
 title: What's it all about Alfie.
 comments: false
+image: assets\images\smartphone-map.jpg
 ---
 Sit back and enjoy a few random thoughts and musings from an old guy with a computer. The journey is about to begin. It's going to be a fun ride my friend.
 
