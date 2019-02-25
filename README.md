@@ -75,7 +75,7 @@ comments: true
 ---
 ```
 
-### Copyright
+### Original Theme Copyright
 
 Copyright (C) 2019 WowThemes.net.
 
