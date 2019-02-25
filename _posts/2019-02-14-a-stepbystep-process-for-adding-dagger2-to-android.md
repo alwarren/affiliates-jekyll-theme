@@ -7,6 +7,7 @@ image: assets/images/kotlin-example-3.jpg
 featured: false
 hidden: false
 source:
+permalink: adding-dagger2-to-android
 ---
 Dagger2 is a powerful dependency injection library. However, it can be confusing for the first-time user. And unless things are created in the correct order, builds fail with cryptic error messages.
 

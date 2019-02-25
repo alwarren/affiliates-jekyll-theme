@@ -5,6 +5,7 @@ author: al
 categories: [ Videos ]
 image: assets/images/bug-testing.jpg
 featured: false
+permalink: test-everywhere-video
 ---
 
 >"While you should archtitect your applications very thoughtfully, the limitations of the tools shouldn't dictate your application architecture." - Frictionless Android Testing: write once, run everywhere (Google I/O `18)

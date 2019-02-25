@@ -7,6 +7,7 @@ image: assets/images/java-code-1.png
 featured: false
 hidden: false
 source:
+permalink: android-studio-method-to-extension
 ---
 Suppose you have some Kotlin function that takes an argument and you want to convert it to an extension. There's a keyboard shortcut for that.
 
