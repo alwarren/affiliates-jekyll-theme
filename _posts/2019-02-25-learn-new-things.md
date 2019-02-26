@@ -24,7 +24,7 @@ No, I wanted to know down to the most minute detail how everything about that mo
 
 ### The Crankcase Lesson
 
-> "_Learning never exhausts the mind._" - Leonardo da Vinci
+> "_There are no secrets to success. It is the result of preparation, hard work, and learning from failure._" - Colin Powell
 
 Day by day. Bit by bit. That old broken lawnmower became a scattered pile of metal. One last thing. The biggest challenge. The crankcase. With no idea of what it was, or what it did, or what was inside, it had to come apart. Who knows what mysteries might lie inside. But I had a hunch that the thing made that blade spin. Wrench in hand, the final bolts come out. And the thing doesn't fall apart.
 
