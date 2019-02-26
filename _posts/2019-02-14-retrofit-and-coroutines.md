@@ -4,7 +4,7 @@ title: "Retrofit and Coroutines"
 author: al
 categories: [ Android Studio ]
 image: assets/images/kotlin-example-3.jpg
-featured: true
+featured: false
 permalink: retrofit-and-coroutines
 ---
 I was thinking about enqueue vs execute in Retrofit. One does it's own threading and the other just calls the api. So if I want coroutines to do the threading, why do I need to let Retrofit do it with enqueue? Here's what I came up with.
